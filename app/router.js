@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('dashboard', {}, function() {
+    this.route('top-level-route', {resetNamespace: true});
+  });
 });
 
 export default Router;
